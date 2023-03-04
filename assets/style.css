@@ -132,14 +132,6 @@ p {
     align-items: center;
 }
 
-/* .container-details-title {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    position: relative;
-} */
-
 .container-details-title-imgs::after {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -183,7 +175,9 @@ p {
     margin-top: 100px;
     display: flex;
     justify-content: center;
-    padding-bottom: 100px;
+    background: var(--color-3);
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .item-section-2 {
@@ -246,4 +240,5 @@ p {
 
 .container-footer div {
     padding-bottom: 50px;
+    background: var(--color-3);
 }
