@@ -294,6 +294,8 @@ p {
 
     .header-item-bars {
         display: block!important;
+        margin-right: 0px;
+        margin-left: 0px!important;
     }
 
     .header-item {
@@ -304,6 +306,7 @@ p {
         width: 100%;
         flex-direction: column;
         margin-left: 0px!important;
+        margin-right: 0px;
         align-items: center;
 
     }
@@ -311,12 +314,14 @@ p {
     .container-details-imgs {
         width: 100%;
         flex-direction: column;
+        margin-left: 0px!important;
     }
 
     .container-footer {
         width: 100%;
         margin-right: 0px;
         margin-left: 0px;
+        margin-left: 0px!important;
     }
 
     .menu:hover .header-item-bars-list {
@@ -327,6 +332,10 @@ p {
 
     .container-details-title-imgs::after {
         content: "\f063";
+    }
+
+    .container-section-2 {
+        flex-direction: column;
     }
 }
 
@@ -372,6 +381,17 @@ p {
 
     .container-details-title-imgs::after {
         content: "\f063";
+    }
+
+    .container-section-2 {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .middle-content-1-img {
+        overflow: hidden;
     }
 
 }
