@@ -40,6 +40,48 @@ body {
     margin-right: 100px;
 }
 
+.header-item-bars {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    display: none;
+}
+
+.header-item-bars-list {
+    text-align: left;
+    list-style: none;
+    background: var(--color-1);
+    color: var(--color-3);
+    padding-left: 0px;
+    border-radius: 5px;
+    display: none;
+}
+
+.menu {
+    text-align: right;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
+}
+
+.header-item-bars-list li {
+    padding: 5px;
+    border: 1px solid var(--color-1);
+    border-radius: 5px;
+}
+
+.header-item-bars-list li:hover {
+    background: var(--color-3);
+    color: var(--color-1);
+    text-align: center;
+}
+
+.container-header-item-bars-list {
+    list-style: none;
+    margin-top: 0px;
+}
+
+
 .header-item:hover {
     border-color: var(--color-1);
     border-radius: 5px;
@@ -241,4 +283,91 @@ p {
 .container-footer div {
     padding-bottom: 50px;
     background: var(--color-3);
+}
+
+@media all and (max-width: 1049px) { 
+    .container-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-item-bars {
+        display: block!important;
+    }
+
+    .header-item {
+        display: none;
+    }
+
+    .container-middle-content-1 {
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0px!important;
+        align-items: center;
+
+    }
+
+    .container-details-imgs {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container-footer {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .menu:hover .header-item-bars-list {
+        display: block;
+        z-index: 10;
+        position: absolute;
+    }
+
+    .container-details-title-imgs::after {
+        content: "\f063";
+    }
+}
+
+@media all and (max-width: 576px) { 
+    .container-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-item-bars {
+        display: block!important;
+    }
+
+    .header-item {
+        display: none;
+    }
+
+    .container-middle-content-1 {
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0px!important;
+        align-items: center;
+
+    }
+
+    .container-details-imgs {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container-footer {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .menu:hover .header-item-bars-list {
+        display: block;
+        z-index: 10;
+        position: absolute;
+    }
+
 }
