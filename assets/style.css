@@ -118,11 +118,14 @@ p {
 }
 
 .middle-content-1-img {
-    width: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
+
 .img-1 {
-    width: 486px;
+    width: 50%px;
     height: 483px;
 }
 
@@ -219,7 +222,7 @@ p {
     justify-content: center;
     background: var(--color-3);
     margin-left: 150px;
-    margin-right: 150px;
+    margin-right: 150px;   
 }
 
 .item-section-2 {
@@ -238,7 +241,6 @@ p {
 .item-section-2:hover .section-2-imgs {
     border: 1px solid var(--color-1);
     border-color: var(--color-1);
-    transform: scale(1.1);
 }
 
 .item-section-2:hover .button-item-section-2 {
@@ -317,7 +319,7 @@ p {
         margin-left: 0px!important;
     }
 
-    .container-footer {
+    .container-footer { 
         width: 100%;
         margin-right: 0px;
         margin-left: 0px;
