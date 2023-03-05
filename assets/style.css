@@ -336,6 +336,13 @@ p {
 
     .container-section-2 {
         flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .middle-content-1-img {
+        overflow: hidden;
     }
 }
 
